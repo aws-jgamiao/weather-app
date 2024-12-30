@@ -10,7 +10,7 @@ const WeatherApp = () => {
 
   const fetchWeather = async (city) => {
     const API_KEY = '1a53915c365c4f0da5975858243012';
-    const API_URL = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`;
+    const API_URL = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`;
 
     setLoading(true);
     setError(null);
