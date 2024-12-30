@@ -1,0 +1,175 @@
+/* General Styles */
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background 0.5s ease;
+  }
+  
+  /* Default Background */
+  .default-bg {
+    background-color: #f0f0f0; /* Light gray for default */
+  }
+  
+  /* Sunny Background */
+  .sunny-bg {
+    background: linear-gradient(to top, #ff7e5f, #feb47b); /* Sunrise orange gradient */
+  }
+  
+  /* Cloudy Background */
+  .cloudy-bg {
+    background: linear-gradient(to top, #d3d3d3, #f0f0f0); /* Light gray for cloudy */
+  }
+  
+  /* Rainy Background */
+  .rainy-bg {
+    background: linear-gradient(to top, #1f3c4d, #3a6a8f); /* Dark blue for rain */
+  }
+  
+  /* Misty Background */
+  .misty-bg {
+    background: linear-gradient(to top, #a6a6a6, #e6e6e6); /* Grayish for mist */
+  }
+  
+  /* Snowy Background */
+  .snowy-bg {
+    background: linear-gradient(to top, #a1c4fd, #c2e9fb); /* Cool blue for snow */
+  }
+  
+  /* Weather Card Styling */
+  .weather-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Styles */
+  .city-input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+  }
+  
+  /* Weather Info */
+  .weather-info {
+    margin-top: 20px;
+  }
+  
+  /* Weather Icon */
+  .weather-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Weather Details */
+  .weather-details p {
+    margin: 5px 0;
+  }
+  
+  .weather-details {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Status */
+  .status {
+    margin-top: 20px;
+  }
+  
+  .loading {
+    color: #0072ff;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  /* Mobile responsiveness (max-width: 768px) */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  
+    .city-input {
+      width: 90%;
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .weather-card {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .weather-info {
+      margin-top: 15px;
+    }
+  
+    .weather-icon {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .weather-details p {
+      font-size: 14px;
+    }
+  
+    .loading, .error {
+      font-size: 14px;
+    }
+  }
+  
+  /* Mobile responsiveness for very small screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    .city-input {
+      width: 95%;
+      font-size: 13px;
+      padding: 7px;
+    }
+  
+    .title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  
+    .weather-card {
+      padding: 15px;
+      width: 95%;
+    }
+  
+    .weather-info {
+      margin-top: 10px;
+    }
+  
+    .weather-icon {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .weather-details p {
+      font-size: 13px;
+    }
+  
+    .loading, .error {
+      font-size: 13px;
+    }
+  }
+  
