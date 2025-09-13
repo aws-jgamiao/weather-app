@@ -4,7 +4,6 @@
   "homepage": "https://aws-jgamiao.github.io/weather-app",
   "private": true,
   "dependencies": {
-    "axios": "^1.7.9",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
